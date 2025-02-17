@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.decomposition import PCA
 from sentence_transformers import SentenceTransformer
-
+from sklearn.ensemble import IsolationForest
 
 def get_embeddings(sentences, model_name='all-MiniLM-L6-v2'):
     """Generates embeddings for given sentences using SentenceTransformer."""
@@ -63,3 +63,4 @@ if __name__ == "__main__":
     embeddings = get_embeddings(sentences)
     #plot_heatmap(embeddings)
     plot_embeddings(embeddings, sentences)
+
