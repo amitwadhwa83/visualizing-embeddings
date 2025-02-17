@@ -13,3 +13,19 @@ This project is focused on visualizing embeddings generated from various machine
 To install the necessary dependencies, run:
 ```bash
 pip install -r requirements.txt
+```
+
+## Usage
+- Prepare your embeddings file (e.g., in CSV format).
+- Run the visualization script:
+```bash
+python visualize_embeddings.py --input embeddings.csv --method tsne
+```
+
+## Examples
+Here are some examples of how to use the visualization tool:
+
+### Example 1: Visualizing Word Embeddings
+```bash
+python visualize_embeddings.py --input word_embeddings.csv --method pca
+```
